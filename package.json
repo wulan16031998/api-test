@@ -1,0 +1,23 @@
+{
+  "name": "api-test",
+  "version": "1.0.0",
+  "description": "apikasi untuk user ",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "build": "node src/index.js",
+    "migrate": "knex migrate:latest --knexfile src/models/knexfile.js"
+  },
+  "author": "wulan",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  },
+  "dependencies": {
+    "cors": "latest",
+    "dotenv": "latest",
+    "express": "latest",
+    "knex": "^2.1.0",
+    "mysql2": "^2.3.3"
+  }
+}
